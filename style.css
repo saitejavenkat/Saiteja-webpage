@@ -1,0 +1,46 @@
+header{
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+    text-align: center;
+    background-color: #627CF9;
+    color: white;
+    padding:1%;
+}
+  body{
+    
+    background-image: url("https://radimrehurek.com/gensim/_static/images/erp2-slider-pic2.png");
+    background-size: 1140px;
+  }
+  img{
+    width: 550px; 
+    padding-left:27%;
+    padding-top: 2%;
+  }
+  p{
+    padding-left:8%;
+    font-size:80%;
+    padding-top: 2%;
+  }
+  p1{
+    padding-left:18%;
+  }
+  h3{
+    padding-top: 1%;
+    padding-left: 40%;
+  }
+  button{
+	
+    background-color:#627CF9;
+    color:white;
+    font-size:20px;
+    margin:0 30px;
+    border-radius:5px;
+    padding:10px 30px;
+  }
+  .buttons{
+    display:flex;
+        align-items:center;
+      justify-content:center;
+    
+  }
