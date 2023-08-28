@@ -27,10 +27,19 @@
 <div id="border1">
     <form>
         <label style="position: absolute;top:30%;left: 5%;color: white;font-size: x-large;">Email :</label>
-        <input type="email" style="position: absolute;top:30%;left: 40%;padding: 2%;">
+        <input type="email" placeholder="Enter mail.." style="position: absolute;top:30%;left: 40%;padding: 2%;">
         <label style="position: absolute;top:50%;left: 5%;color: white;font-size: x-large;">Password :</label>
-        <input type="password" style="position: absolute;top:50%;left: 40%;padding: 2%;">
-        <button style="position: absolute;top:80%;left: 30%;color: white;font-size: large;background-color: rgb(43, 7, 247);border-style: hidden;"">Login Now!</button>
+        <input type="password" placeholder="Password plz .."   style="position: absolute;top:50%;left: 40%;padding: 2%;">
+        <input type="checkbox" style="position: absolute;top:70%;left: 5%;padding: 2%;">
+        <label style="position: absolute;top:65%;left: 10%;color: white;font-size: large;"><p>Plese click the tick mark before you want to login</p></label>
+        
+        <button onclick="myFunction()" style="position: absolute;top:85%;left: 35%;color: white;font-size: large;background-color: rgb(43, 7, 247);border-style: hidden;" >Login Now!</button>
+        <script>
+            function myFunction() {
+              document.write("hello");           }
+          </script>
+   
     </form>
+
 </div>
 </html>
