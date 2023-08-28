@@ -5,17 +5,32 @@
         <title>Creating Webpage</title>
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #border1{
+            position:absolute;
+            top:30%;
+            left:40%;
+            
+            border: 1px solid rgb(248, 247, 247);
+            width: 340px;
+            height: 340px;
+        }
+        body{
+            background-image: url("https://wallpapers.com/images/featured/blue-dgmxybg4kb7eab7x.jpg");
+            background-size: cover;
+        }
+    </style>
     </head>
     
-    <style>
-body{
-    background-image: url("https://wallpapers.com/images/featured/blue-dgmxybg4kb7eab7x.jpg");
-    background-size: cover;
-   display:flex; 
-    flex-wrap:wrap;
-}
-
-
-        </style>
-<header style="margin-left: 45%;color: white;font-size: xx-large;">Login Page</header>   
+<header style="text-align: center;color:rgb(255, 255, 255);font-style: oblique;font-size: xx-large;">Login Page</header>
+<hr>
+<div id="border1">
+    <form>
+        <label style="position: absolute;top:30%;left: 5%;color: white;font-size: x-large;">Email :</label>
+        <input type="email" style="position: absolute;top:30%;left: 40%;padding: 2%;">
+        <label style="position: absolute;top:50%;left: 5%;color: white;font-size: x-large;">Password :</label>
+        <input type="password" style="position: absolute;top:50%;left: 40%;padding: 2%;">
+        <button style="position: absolute;top:80%;left: 30%;color: white;font-size: large;background-color: rgb(43, 7, 247);border-style: hidden;"">Login Now!</button>
+    </form>
+</div>
 </html>
