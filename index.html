@@ -2,7 +2,8 @@
 <!doctype is html>
 <html lang="en-US">
     <head>
-        <title>Creating Webpage</title>
+        <title>It's time to Login</title>
+        <link rel="icon" href="sai.png" type="image/icon type">
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -17,57 +18,56 @@
    
         #border0{
         position: absolute;
-        border: 1px solid rgb(255, 254, 254);
+        border: 1px;
         width: 1350px;
-        height: 40px;
+        height: 45px;
         margin-top: 2%;
-        background-color: rgb(5, 61, 245);
+        display: flexbox;
+        
         }
         #border1{
             position:absolute;
             top:35%;
             left:40%;
             border: 1px solid rgb(248, 247, 247);
-            width: 340px;
+            width: 350px;
             height: 340px;
+            border-radius: 5%;
+            display: flexbox;
             
         }
-        
-      
     </style>
     </head>
     
 <header style="text-align: center;color:rgb(255, 253, 253);font-style: oblique;font-size: xx-large;">Login Page</header>
-
-
-
-
 <div id="border0">
     <nav>
-        <a style="color: white;position: absolute;bottom: 5%;left:2%;" href="https://www.google.com/ " target="_blank">Google</a>
-        <a style="color: white;position: absolute;bottom: 5%;left:10%;" href="https://www.youtube.com/" target="_blank">Youtube</a>
-        <a style="color: white;position: absolute;bottom: 5%;left:20%;" href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a style="color: white;position: absolute;bottom: 5%;left:30%;" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">G-mail</a>
-        <a style="color: white;position: absolute;bottom: 5%;left:40%;" href="https://saitejavenkat.github.io/Saiteja-webpage/" target="_blank">Webpage link</a>
-        <a style="color: white;position: absolute;bottom: 5%;left:54%;" href="https://github.com/saitejavenkat/Saiteja-webpage/blob/main/index.html" target="_blank">Webpagecode</a>
+        <a style="color: white;position: absolute;bottom: 5%;left:10%;" href="https://www.google.com/ " target="_blank">Google</a>
+        <a style="color: white;position: absolute;bottom: 5%;left:20%;" href="https://www.youtube.com/" target="_blank">Youtube</a>
+        <a style="color: white;position: absolute;bottom: 5%;left:30%;" href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a style="color: white;position: absolute;bottom: 5%;left:40%;" href="http://mail.google.com/mail/" target="_blank">G-mail</a>
+        <a style="color: white;position: absolute;bottom: 5%;left:50%;" href="https://saitejavenkat.github.io/Saiteja-webpage/" target="_blank">Webpage link</a>
+        <a style="color: white;position: absolute;bottom: 5%;left:60%;" href="https://github.com/saitejavenkat/Saiteja-webpage/blob/main/index.html" target="_blank">Webpagecode</a>
        
         <h4 style="color: white;position: absolute;left:70%">Welcome! to my Webpage User..</h4>
     </nav>
 </div>
 <div id="border1">
     <form>
-        <label style="position: absolute;top:30%;left: 5%;color: white;font-size: x-large;">Email :</label>
-        <input type="email" placeholder="Enter mail.." style="position: absolute;top:30%;left: 40%;padding: 2%;">
-        <label style="position: absolute;top:50%;left: 5%;color: white;font-size: x-large;">Password :</label>
-        <input type="password" placeholder="Password plz .."   style="position: absolute;top:50%;left: 40%;padding: 2%;">
+        <label style="position: absolute;top:26%;left: 5%;color: white;font-size: x-large;">Email :</label>
+        <input type="email" placeholder="Enter mail.." style="position: absolute;top:26%;left: 40%;padding: 2%;">
+        <label style="position: absolute;top:45%;left: 5%;color: white;font-size: x-large;">Password :</label>
+        <input type="password" placeholder="Password plz .."   style="position: absolute;top:45%;left: 40%;padding: 2%;">
         <input type="checkbox" style="position: absolute;top:70%;left: 5%;padding: 2%;">
-        <label style="position: absolute;top:65%;left: 12%;color: white;font-size: large;"><p>Plese click the tick mark before you want to login</p></label>
-    </form>
-   <button onclick="myFunction()" style="position: absolute;top:85%;left: 35%;color: white;font-size: large;background-color: rgb(5, 61, 245);border-style: hidden;" >Login Now!</button>
-    <script>
-        function myFunction() {
-          document.write("Your login successful but the webpage interact with you later.As the webpage in Developing Stage.");           }
-      </script>
-
+        <label style="position: absolute;top:65%;left: 12%;color: white;font-size: large;"><p>Plese click the checkbox  mark before you want to login to the website</p></label>
+    
+   <button style="position: absolute;top:90%;left: 60%;color: white;font-size: large; background-color: rgb(6, 33, 151); border-style: hidden;" onclick="fun()" >Login Now!</button>
+   </form>
 </div>
+<script>
+    function fun()
+    {
+        document.write("Your login successful but the webpage interact with you later.As the webpage in Developing Stage.")
+    }
+</script>
 </html>
