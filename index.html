@@ -1,82 +1,81 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>interact</title>
-</head>
-<style>
-    .first{
-        border:2px solid black;
-        padding: 2%;
-        width: 10%;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-        border-bottom-left-radius: 25%;
-        border-top-left-radius: 25%;
+<!Doctype is Html>
+<html lang="en-US">
+    <head>
+        <title>It's time to Login</title>
+        <link rel="icon" href="sai.png" type="image/icon type">
+        <link href="style.css" rel="stylesheet" />
         
-    }
-    #circle{
-        border:2px solid black;
-        height:80px;
-        width: 5%;
-        border-radius: 100%;
-        margin-left: 49.68%;
-        margin-top: 3.5%;
-        
-    }
-    #one{
-        margin-top: 10.3%;
-        margin-left: 45%;
-        transform: rotate(-90deg);
-        background-color: orange;
-       
-    }
-    #two{
-        margin-top: 0%;
-        margin-left: 53.4%;
-        transform: rotate(30deg);
-        background-color: aliceblue;
-        
-    }
-    #three{
-        margin-top: -6%;
-        margin-left: 36.8%;
-        transform: rotate(150deg);
-        background-color:green
-    }
-</style>
-<body>
-    <div class="first" id="one"></div><br>
-    <div id="circle"></div>
-    <div class="first" id="two"></div><br>
-    <div class="first" id="three"></div>
-  <button onclick="ready()">change</button>
-  <script>
-    let c1 = "white";
-let c2 = "green";
-let c3 = "orange";
-
-function ready() {
-    setInterval(changeColors, 100); 
-}
-
-function changeColors() {
-    let f1 = document.getElementById("one");
-    let f2 = document.getElementById("two");
-    let f3 = document.getElementById("three");
-
-    // Swap the colors between the elements
-    let temp = c1;
-    c1 = c2;
-    c2 = c3;
-    c3 = temp;
-
-    f1.style.backgroundColor = c1;
-    f2.style.backgroundColor = c2;
-    f3.style.backgroundColor = c3;
-}
-
-
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-  </script>
+    </head>
+    <h1 id="head">Login Page</h1>
+<body>
+
+<div id="border0">
+    <nav class="container">
+        
+    <a style="color:rgb(245, 7, 118);margin-left: 5%;" href="https://www.google.com/ " target="_blank">Google</a>
+    <a style="color: rgb(245, 7, 118);margin-left: 9%;" href="https://www.youtube.com/" target="_blank">Youtube</a>          
+    <a style="color:rgb(245, 7, 118);margin-left: 11%;" href="https://www.instagram.com/" target="_blank">Instagram</a>          
+    <a style="color:rgb(245, 7, 118);margin-left: 13%;" href="http://mail.google.com/mail/" target="_blank">G-mail</a>          
+    <a style="color: rgb(245, 7, 118);margin-left: 15%;" href="https://saitejavenkat.github.io/Saiteja-webpage/" target="_blank">Webpage link</a>          
+       
+    </nav>
+</div>
+
+<div id="border1">
+    <form>
+        <label style="position: absolute;top:26%;left: 5%;color: rgb(79, 4, 255);font-size: x-large; ">Enter name :</label>
+        <input id="col" type="text" placeholder="Enter name.."  style="position: absolute;top:26%;left: 40%;padding: 2%;" title="Enter your username:" required>
+        <label style="position: absolute;top:45%;left: 5%;color: rgb(80, 5, 255);font-size: x-large;" >Password :</label>
+        <input type="password" placeholder="Password plz .."   style="position: absolute;top:45%;left: 40%;padding: 2%;" id="password" required>
+    </form>
+    <button style="position: absolute;top:70%;left: 38%;color: rgb(4, 199, 248);font-size: large; " onclick="logindetailcheck()">Login right Now!</button>
+    
+</div>
 </body>
+<script>
+let i = 0, j = 0;
+        const colors = ["red", "green", "blue","violet","yellow"];
+        let currentColorIndex = 0;
+        let change = document.getElementById("border1");
+    
+        function logindetailcheck() {
+            let username = document.getElementById("col");
+            let pass = document.getElementById("password");
+            if (i === 0 && username.value !== "" && pass.value !== "") {
+                let heading = document.getElementById("head");
+                alert("Successful login.");
+                heading.innerHTML = "Welcome " + username.value;
+                username.value = username.value + "@gmail.com";
+                username.style.color="orange";
+    
+                i++;
+                colorchange();
+            } else if (i > 0) {
+                alert("You have already logged in this page.");
+            } else {
+                alert("Please fill in all the requirements needed to log in.");
+            }
+        }
+    
+        function colorchange() {
+            if (j === 5) {
+                j = 0;
+            }
+            setTimeout(wait, 300);
+        }
+    
+        function wait() {
+            change.style.borderColor = colors[j];
+            let nowhead = document.getElementById("head");
+            nowhead.style.color = colors[j];
+            j++;
+            colorchange();
+        }
+    
+    
+
+</script>
 </html>
