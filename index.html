@@ -3,7 +3,7 @@
     <head>
         <title>It's time to Login</title>
         <link rel="icon" href="sai.png" type="image/icon type">
-        <link href="style.css" rel="stylesheet" />
+        <link href="new.css" rel="stylesheet" />
         
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,32 +15,26 @@
 <div id="border0">
     <nav class="container">
         
-    <a style="color:rgb(245, 7, 118);margin-left: 5%;" href="https://www.google.com/ " target="_blank">Google</a>
-    <a style="color: rgb(245, 7, 118);margin-left: 9%;" href="https://www.youtube.com/" target="_blank">Youtube</a>          
-    <a style="color:rgb(245, 7, 118);margin-left: 11%;" href="https://www.instagram.com/" target="_blank">Instagram</a>          
-    <a style="color:rgb(245, 7, 118);margin-left: 13%;" href="http://mail.google.com/mail/" target="_blank">G-mail</a>          
-    <a style="color: rgb(245, 7, 118);margin-left: 15%;" href="https://saitejavenkat.github.io/Saiteja-webpage/" target="_blank">Webpage link</a>          
-       
+     
     </nav>
 </div>
 
 <div id="border1">
-    <form>
-        <label style="position: absolute;top:26%;left: 5%;color: rgb(79, 4, 255);font-size: x-large; ">Enter name :</label>
-        <input id="col" type="text" placeholder="Enter name.."  style="position: absolute;top:26%;left: 40%;padding: 2%;" title="Enter your username:" required>
-        <label style="position: absolute;top:45%;left: 5%;color: rgb(80, 5, 255);font-size: x-large;" >Password :</label>
-        <input type="password" placeholder="Password plz .."   style="position: absolute;top:45%;left: 40%;padding: 2%;" id="password" required>
+    <form >
+        <label style="position: absolute;top:26%;left: 5%;color: rgb(250, 250, 252);font-size: x-large; ">Username :</label>
+        <input id="col" type="text" placeholder="Enter name.."  style="position: absolute;top:26%;left: 40%;padding: 4%;" title="Enter your username:" required>
+        <label style="position: absolute;top:45%;left: 5%;color: rgb(250, 250, 252);font-size: x-large;" >Password :</label>
+        <input type="password" placeholder="Password plz .."   style="position: absolute;top:45%;left: 40%;padding: 4%;" id="password" required>
     </form>
-    <button style="position: absolute;top:70%;left: 38%;color: rgb(4, 199, 248);font-size: large; " onclick="logindetailcheck()">Login right Now!</button>
+    <button style="position: absolute;top:75%;padding: 3%; left: 30%;color: rgb(252, 249, 249);font-size: large;background-color: rgb(6, 134, 253); border-color: rgb(6, 130, 253); " onclick="logindetailcheck()">Login right Now!</button>
     
 </div>
 </body>
 <script>
-let i = 0, j = 0;
-        const colors = ["red", "green", "blue","violet","yellow"];
+let i = 0, j = 0,k=0;
+        const colors = ["red", "green", "blue","orange","yellow"];
         let currentColorIndex = 0;
         let change = document.getElementById("border1");
-    
         function logindetailcheck() {
             let username = document.getElementById("col");
             let pass = document.getElementById("password");
@@ -48,9 +42,9 @@ let i = 0, j = 0;
                 let heading = document.getElementById("head");
                 alert("Successful login.");
                 heading.innerHTML = "Welcome " + username.value;
-                username.value = username.value + "@gmail.com";
-                username.style.color="orange";
-    
+                username.value +=  "@gmail.com";
+                username.style.color="blue";
+                create();
                 i++;
                 colorchange();
             } else if (i > 0) {
@@ -64,17 +58,43 @@ let i = 0, j = 0;
             if (j === 5) {
                 j = 0;
             }
-            setTimeout(wait, 300);
+            setTimeout(wait, 250);
         }
     
         function wait() {
+            
             change.style.borderColor = colors[j];
-            let nowhead = document.getElementById("head");
-            nowhead.style.color = colors[j];
+            
             j++;
             colorchange();
         }
-    
+        
+    function create()
+    {
+        let a=document.getElementById("col");
+            let heading=document.getElementById("head");
+            if(k==0)
+            {
+            heading.innerHTML=""
+            }
+            let name="Welcome "+a.value+"...";
+            heading.innerHTML+=name[k];
+            heading.style.color=colors[j];
+            let val=name.length;
+            if(k==val-1)
+            {
+                
+                k=-1;
+            }
+            setTimeout(new1,250);
+
+        }
+        function new1()
+        {
+        
+            k++;
+            create();
+        }
     
 
 </script>
