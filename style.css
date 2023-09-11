@@ -1,63 +1,31 @@
-header{
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
-      text-align: center;
-      background-color: #627CF9;
-      color: white;
-      padding:1%;
-  }
-    body{
-      
-      background-image: url("https://radimrehurek.com/gensim/_static/images/erp2-slider-pic2.png");
-      background-size: 1140px;
-      background-repeat:no-repeat;
-      
-    }
-    img{
-      width: 550px; 
-      padding-left:27%;
-      padding-top: 2%;
-      
-    }
-    .first{
-        text-align: center;
-      font-size:80%;
-      padding-top: 2%;
-      
-    }
-    .last{
-        text-align: center;
-        font-size:80%;
-        margin-top: -2%;
-      }
-    p1{
-      padding-left:18%;
-    }
-    h3{
-      padding-top: 1%;
-      padding-left: 40%;
-    }
-    button{
-      
-      background-color:#627CF9;
-      color:white;
-      font-size:20px;
-      margin:0 30px;
-      border-radius:5px;
-      padding:10px 30px;
-    }
-    .buttons{
-      display:flex;
-          align-items:center;
-        justify-content:center;
-      
-    }
-    footer{
-        font-size:90%;
-      
-        text-align: center;
-        color: white;
-        margin: 4% -2% -2% -2%;
-        background-color:#627CF9
-    }
+
+body{
+    background-image: url("https://wallpapercave.com/wp/wp5231673.jpg");
+    background-size:cover;
+   background-repeat: no-repeat;  
+   background-origin: content-box;  
+}
+        h1{
+            text-align: center;
+        }
+        #border0{
+        position: absolute;
+        width: 95%;
+        margin-top: 4%;
+       
+        }
+        #border1{
+            position:absolute;
+            top:35%;
+            left:44%;
+            border: 2px solid rgb(8, 8, 8);
+            width: 350px;
+            height: 320px;
+            border-radius: 5%;
+            display: flex;
+        }
+        .flexbox{
+            display: flex;
+            
+        }
+    
