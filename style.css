@@ -29,7 +29,8 @@ body{
             
         }
     #col,#password{
-        border-radius: 15%;
+        border-top-right-radius: 150%;
+        border-bottom-right-radius: 150%;
         border-style: hidden;
         
         
