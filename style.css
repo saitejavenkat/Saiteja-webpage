@@ -1,10 +1,16 @@
 
-body{
-    background-image: url("https://wallpapercave.com/wp/wp5231673.jpg");
-    background-size:cover;
-   background-repeat: no-repeat;  
-   background-origin: content-box;  
-}
+body {
+            background-image: url("size.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+      @media (max-width: 768px) {
+            body {
+                background-image: url("size1.jpg");
+                background-size: cover;
+            background-repeat: no-repeat;
+            }
+        }
         h1{
             text-align: center;
         }
