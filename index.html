@@ -1,101 +1,91 @@
-<!Doctype is Html>
+<!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>It's time to Login</title>
-        <link rel="icon" href="sai.png" type="image/icon type">
-        <link href="style.css" rel="stylesheet" />
-        
+        <title>Signup Page</title>
         <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="login_.css" rel="stylesheet">
+        <script src="loginrun.js"></script>
     </head>
-    <h1 id="head">Login Page</h1>
-<body>
-
-<div id="border0">
-    <nav class="container">
-        
-     
-    </nav>
-</div>
-
-<div id="border1">
-    <form >
-        <label style="position: absolute;top:26%;left: 5%;color: rgb(250, 250, 252);font-size: x-large; ">Username :</label>
-        <input id="col" type="text" placeholder="Enter name.."  style="position: absolute;top:26%;left: 40%;padding: 3%;" title="Enter your username:" required>
-        <label style="position: absolute;top:45%;left: 5%;color: rgb(250, 250, 252);font-size: x-large;" >Password :</label>
-        <input type="password" placeholder="Password plz .."   style="position: absolute;top:45%;left: 40%;padding: 3%;" id="password" required>
-    </form>
-    <button style="position: absolute;top:75%;padding: 3%; left: 30%;color: rgb(252, 249, 249);font-size: large;background-color: rgb(6, 134, 253); border-color: rgb(6, 130, 253); " onclick="logindetailcheck()">Login right Now!</button>
-    
-</div>
-</body>
-<script>
-let i = 0, j = 0,k=0;
-        const colors = ["red", "green", "blue","orange","yellow"];
-        let currentColorIndex = 0;
-        let change = document.getElementById("border1");
-        function logindetailcheck() {
-            let username = document.getElementById("col");
-            let pass = document.getElementById("password");
-            if (i === 0 && username.value !== "" && pass.value !== "") {
-                let heading = document.getElementById("head");
-                alert("Successful login.");
-                heading.innerHTML = "Welcome " + username.value;
-                username.value +=  "@gmail.com";
-                username.style.color="blue";
-                create();
-                i++;
-                colorchange();
-            } else if (i > 0) {
-                alert("You have already logged in this page.");
-            } else {
-                alert("Please fill in all the requirements needed to log in.");
-            }
-        }
-    
-        function colorchange() {
-            if (j === 5) {
-                j = 0;
-            }
-            setTimeout(wait, 250);
-        }
-    
-        function wait() {
-            
-            change.style.borderColor = colors[j];
-            
-            j++;
-            colorchange();
-        }
-        
-    function create()
-    {
-        let a=document.getElementById("col");
-            let heading=document.getElementById("head");
-            if(k==0)
-            {
-            heading.innerHTML=""
-            }
-            let name="Welcome "+a.value+"...";
-            heading.innerHTML+=name[k];
-            heading.style.color=colors[j];
-            let val=name.length;
-            if(k==val-1)
-            {
-                
-                k=-1;
-            }
-            setTimeout(new1,250);
-
-        }
-        function new1()
-        {
-        
-            k++;
-            create();
-        }
+    <body>
+        <div class="page" dir="ltr">
+            <div class="headingbox">
+                <div class="main-photo">
+                    <span class="photo">
+                        <a href="#">
+                            <img src="logobr.png" width="100px"  alt="logo">
+                        </a>
+                    </span>
+                </div>
+                <div class="heading">
+                    <h1><i>Signup</i></h1>
+                </div>
+            </div>
+            <div class="details-outter">
+                <div class="details-inner">
+                    <form id="information">
+                        <label for="first" class="n0" spellcheck="true">First Name:</label>
+                        <span class="arr1">
+                            <input type="text" id="first" autocomplete="given-name" placeholder="Enter first name..">
+                            <br>
+                        </span>
+                        <label for="last" class="n1">Last Name:</label>
+                        <span class="arr2">
+                            <input type="text" id="last" autocomplete="additional-name" placeholder="Enter last name..">
+                            <br>
+                        </span>
+                        <label for="username" class="us">Username:</label>
+                        <span class="arr3">
+                            <input type="text" id="username" autocomplete="off" placeholder="Create username..">
+                            <br>
+                        </span>
+                        <label for="pass" class="p0">Password:</label>
+                        <span class="arr4">
+                            <input type="password" id="pass" autocomplete="off" placeholder="Enter password..">
+                            <br>
+                        </span>
+                        <label for="pass1" class="p1">Password:</label>
+                        <span class="arr5">
+                            <input type="password" id="pass1" autocomplete="off" placeholder="Re-enter password..">
+                            <br>
+                        </span>
+                        <label for="coll" class="cl">College:</label>
+                        <span class="arr6">
+                            <input type="text" id="coll" autocomplete="organization" placeholder="College name..">
+                            <br>
+                        </span>
+                        <label for="level" class="pr">Profession:</label>
+                        <span class="arr7">
+                            <select id="level" class="opt">
+                                <option selected>-Select-</option>
+                                <option>Student</option>
+                                <option>Employee</option>
+                                <option id="admins">Admin</option>
+                            </select>
+                        </span>
+                        <br>
+                        <button type="button" onclick="hi()">
+                            Create Account
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <div class="footer">
+                    <div class="footer-box">
+                        <p>
+                            <h5>Thank you for sigining for any queries feel free to contact.&nbsp; &nbsp;
+                            
+                            <super>
+                                <a href="#" target="_blank"> Linkedin</a>
+                            </super>
+                            <em style="right: 0;position:fixed;bottom:0;"> &copy; Copyright.</em>
+                            </h5>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
     
 
-</script>
 </html>
