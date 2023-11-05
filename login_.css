@@ -1,0 +1,118 @@
+.page{
+    border: 1px solid black;
+    border-radius: 5px;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    display:block;
+    position: fixed;
+}
+.main-photo{
+    padding:40px;
+    left:0;
+    position: fixed;
+    
+}
+.photo{
+    left:0;
+    top:25px;
+    position: fixed;
+}
+.headingbox{
+    border:1px solid black;
+    left:0;
+    width:100%;
+    height:80px;
+    position:fixed;
+    background-color: black;
+}
+.heading{
+    color: white;
+    text-align: center;
+    font-family: Cambria;
+    display: block;
+}
+.details-outter{
+    margin-top: 80px;
+    width:100%;
+    height:450px;
+}
+.details-inner{
+    margin-top: 120px;
+    text-align: center;
+    color:rgb(255, 81, 0);
+}
+#first,#pass,#pass1,#username,#last,#coll,.opt
+{
+    outline: none;
+    border:2px solid rgb(14, 13, 13);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius:20px;
+    padding-right: 30px;
+}
+.n0,.n1,.p0,.p1,.cl,.pr,.us{
+    font-size: larger;
+    font-weight: bold;
+}
+.arr1{
+    margin-left:20px;
+}
+.arr2{
+    margin-left:22px;
+}
+.arr3{
+    margin-left:26px;
+}
+.arr4{
+    margin-left:28px;
+}
+.arr5{
+    margin-left:28px;
+}
+.arr6{
+    margin-left:40px;
+}
+.arr7{
+    margin-left:23px;
+}
+.opt{
+    padding-left:60px;
+    padding-right:60px;
+}
+body{
+    background-color: rgb(120, 235, 126);
+}
+.pr{
+    margin-left: 2px;
+}
+.footer{
+    bottom: 0;
+    height:max-content;
+    width:100%;
+    color:antiquewhite;
+    background-color: rgb(24, 23, 23);
+    position: fixed;
+    text-align: center;
+    
+}
+a{
+    color:rgb(72, 156, 235);
+}
+button{
+    padding:10px;
+    background-color: rgb(67, 116, 182);
+    color:white;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(214, 9, 146);
+    transition: 0.5s;
+}
+option{
+    background-color: rgb(240, 247, 240);
+}
