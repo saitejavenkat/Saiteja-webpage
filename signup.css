@@ -96,10 +96,7 @@ body {
 
  }
  
- .adver:hover{
-   background: linear-gradient(to right,rgb(172, 243, 151),rgb(119, 122, 119));
-   transition: 1s;
- }
+
 
  .details {
    width:50%; 
