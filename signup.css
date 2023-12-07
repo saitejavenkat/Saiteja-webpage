@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ header {
+    height: 10vh;
+    position: relative;
+    margin-bottom: 5px;
+ }
+ 
+ .head-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+ }
+
+ .head-logo{
+   height:10vh;
+   width:15%;
+   position:relative;
+ }
+ 
+ img{
+   position: absolute;
+   width:100%;
+   height:100%;
+ }
+ 
+ li {
+    list-style: none;
+    position: relative;
+    margin-right: 10px;
+ }
+ 
+ a {
+    text-decoration: none;
+    color: black;
+ }
+ 
+ .nav-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ 
+ .small-dev {
+    display: none;
+ }
+ ul {
+   display: flex;
+   flex-direction: row;
+}
+ 
+
+
+ 
+ li::after {
+   content: "";
+   height: 3px;
+   width: 0%;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   position: absolute;
+   background-color: aqua;
+   transition: 1s;
+ }
+ 
+ li:hover::after {
+   width: 100%;
+   background-color: aqua;
+ }
+
+ .section-1 {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   height: 80vh;
+  
+   justify-content: space-evenly;
+   align-items: center;
+   margin: auto;
+   position: relative;
+ }
+ 
+ .adver {
+   width:40%;
+   height: 60vh;
+
+   background: linear-gradient(to left,rgb(172, 243, 151),rgb(119, 122, 119));
+   transition: 2s;
+
+ }
+ 
+ .adver:hover{
+   background: linear-gradient(to right,rgb(172, 243, 151),rgb(119, 122, 119));
+   transition: 1s;
+ }
+
+ .details {
+   width:50%; 
+   height: 70vh;
+   
+ }
+
+
+.get-details{
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   align-items: center;
+}
+
+.get-details div{
+   margin-top: 15px;
+   margin-bottom: 15px;
+   
+}
+
+.get-details div input{
+   margin-left: 10px;
+   padding: 5px;
+}
+
+label::after{
+   content:"*";
+   color:red;
+
+}
+
+.checker::after{
+   content: "";
+}
+
+@media screen and (max-width: 768px) {
+   .section-1{
+      flex-direction: column;
+      height:150vh;
+      width:100%;
+   }
+   .adver{
+      width:100%;
+   }
+   .details{
+      width:100%;
+   }
+  
+
+   ul{
+     flex-direction: column;
+   }
+}
