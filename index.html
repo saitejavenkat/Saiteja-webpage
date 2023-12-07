@@ -1,91 +1,72 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
     <head>
-        <title>Signup Page</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="login_.css" rel="stylesheet">
-        <script src="loginrun.js"></script>
+        <title>Try</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="signup.css">
     </head>
     <body>
-        <div class="page" dir="ltr">
-            <div class="headingbox">
-                <div class="main-photo">
-                    <span class="photo">
-                        <a href="#">
-                            <img src="logobr.png" width="100px"  alt="logo">
-                        </a>
-                    </span>
+        <header>
+            <div class="head-box">
+                <div class="head-logo">
+                    <a href="#" name="home">
+                        <img src="logobr.png" alt="Logo-website" name="main-logo">
+                    </a>
                 </div>
                 <div class="heading">
-                    <h1><i>Signup</i></h1>
+                    <h2>Welcome</h2>
+                </div>
+                <div class="nav-bar">
+                    <div class="links">
+                        <ul>
+                            <li><a href="#" name="home">Signup</a></li>
+                            <li><a href="#" name="login">Signin</a></li>
+                            <li><a href="#" name="Linkedin">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="details-outter">
-                <div class="details-inner">
-                    <form id="information">
-                        <label for="first" class="n0" spellcheck="true">First Name:</label>
-                        <span class="arr1">
-                            <input type="text" id="first" autocomplete="given-name" placeholder="Enter first name..">
-                            <br>
-                        </span>
-                        <label for="last" class="n1">Last Name:</label>
-                        <span class="arr2">
-                            <input type="text" id="last" autocomplete="additional-name" placeholder="Enter last name..">
-                            <br>
-                        </span>
-                        <label for="username" class="us">Username:</label>
-                        <span class="arr3">
-                            <input type="text" id="username" autocomplete="off" placeholder="Create username..">
-                            <br>
-                        </span>
-                        <label for="pass" class="p0">Password:</label>
-                        <span class="arr4">
-                            <input type="password" id="pass" autocomplete="off" placeholder="Enter password..">
-                            <br>
-                        </span>
-                        <label for="pass1" class="p1">Password:</label>
-                        <span class="arr5">
-                            <input type="password" id="pass1" autocomplete="off" placeholder="Re-enter password..">
-                            <br>
-                        </span>
-                        <label for="coll" class="cl">College:</label>
-                        <span class="arr6">
-                            <input type="text" id="coll" autocomplete="organization" placeholder="College name..">
-                            <br>
-                        </span>
-                        <label for="level" class="pr">Profession:</label>
-                        <span class="arr7">
-                            <select id="level" class="opt">
-                                <option selected>-Select-</option>
-                                <option>Student</option>
-                                <option>Employee</option>
-                                <option id="admins">Admin</option>
-                            </select>
-                        </span>
-                        <br>
-                        <button type="button" onclick="hi()">
-                            Create Account
-                        </button>
+            <hr>
+        </header>
+        <main>
+            <div class="section-1">
+                <div class="adver">
+                </div>
+                <div class="details">
+                    <form class="get-details" role="application">
+                        <div class="first">
+                        <label for="first">First name:</label>
+                        <input type="text" required id="first" placeholder="First Name">
+                        </div>
+                        <div class="last">
+                        <label for="Last">Last name:</label>
+                        <input type="text" required id="Last" class="last-name" placeholder="Last-Name">
+                        </div>
+                        <div>
+                            <label for="user">Username:</label>
+                            <input type="text" id="user" class="user-name" required placeholder="Create username">
+                        </div>
+                        <div>
+                            <label for="pass0">Password:</label>
+                            <input type="password" id="pass0" required placeholder="Create password">
+                        </div>
+                        <div>
+                            <label for="grad">Gradution:</label>
+                            <input type="text" id="grad" placeholder="Enter you Current Study" required>
+                        </div>
+                        <div>
+                            <label for="college">College:</label>
+                            <input type="text" id="college" placeholder="Enter your College" required>
+                        </div>
+                        <div>
+                            <input type="checkbox" required>
+                            <label class="checker">Click the box if you agree all the information<br>&nbsp; above is correct.</label>
+                        </div>
+                        <button>Signup Now</button>
                     </form>
                 </div>
             </div>
-            <footer>
-                <div class="footer">
-                    <div class="footer-box">
-                        <p>
-                            <h5>Thank you for sigining for any queries feel free to contact.&nbsp; &nbsp;
-                            
-                            <super>
-                                <a href="#" target="_blank"> Linkedin</a>
-                            </super>
-                            <em style="right: 0;position:fixed;bottom:0;"> &copy; Copyright.</em>
-                            </h5>
-                        </p>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    
-
+        </main>
+    </body>
 </html>
