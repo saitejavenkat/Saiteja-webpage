@@ -1,34 +1,71 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-IN">
     <head>
-        <title>Signup page</title>
-        <link rel="icon" href="GO-ON.png" type="image/icon type">
-        <link rel="stylesheet" href="signuppagestyle.css">
+        <title>Try</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="signup.css">
     </head>
     <body>
-       
-        <img src="GO-ON.png" width="250PX" height="80px">
-        <hr>
-        <h3>Signup now</h3>
-        <div class="look">
-            <form>
-                <label name="firstname">First name : </label>
-                <input  for="firstname" type="text" required>
-                <br>
-                <label name="lastname">Last name : </label>
-                <input for="lastname" type="text" required>
-                <br>
-                <label name="Username">Username : </label>
-                <input  for="Username" type="text" placeholder="Create username.." required>
-                <br>
-                <label name="password">Password : </label>
-                <input  for="password" type="password" required>
-                <br>
-                <label name="repassword">Password : </label>
-                <input for="repassword" type="password"placeholder="Re-enter password.." required>
-                <br>
-                <button>Signup now</button>
-            </form>
-        </div>
-    </body>
-    </html>
+        <header>
+            <div class="head-box">
+                <div class="head-logo">
+                    <a href="#" name="home">
+                        
+                    </a>
+                </div>
+                <h2>Signup Now</h2>
+           
+                <div class="nav-bar">
+                    <div class="links">
+                        <ul>
+                            <li><a href="#" name="home">Signup</a></li>
+                            <li><a href="#" name="login">Signin</a></li>
+                            <li><a href="#" name="Linkedin">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <main>
+            <div class="section-1">
+                <div class="adver">
+                </div>
+                <div class="details">
+                    <form class="get-details" role="application">
+                        <div class="first">
+                        <label for="first">First name:</label>
+                        <input type="text" required="" id="first" placeholder="First Name">
+                        </div>
+                        <div class="last">
+                        <label for="Last">Last name:</label>
+                        <input type="text" required="" id="Last" class="last-name" placeholder="Last-Name">
+                        </div>
+                        <div>
+                            <label for="user">Username:</label>
+                            <input type="text" id="user" class="user-name" required="" placeholder="Create username">
+                        </div>
+                        <div>
+                            <label for="pass0">Password:</label>
+                            <input type="password" id="pass0" required="" placeholder="Create password">
+                        </div>
+                        <div>
+                            <label for="grad">Gradution:</label>
+                            <input type="text" id="grad" placeholder="Enter you Current Study" required="">
+                        </div>
+                        <div>
+                            <label for="college">College:</label>
+                            <input type="text" id="college" placeholder="Enter your College" required="">
+                        </div>
+                        <div>
+                            <input type="checkbox" required="">
+                            <label class="checker">Click the box if you agree all the information<br>&nbsp; above is correct.</label>
+                        </div>
+                        <button>Signup Now</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    
+
+</body></html>
