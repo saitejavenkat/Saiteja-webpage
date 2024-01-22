@@ -16,19 +16,22 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 
+    height: 100%;
  }
 
  .head-logo{
-   height:10vh;
-   width:15%;
-   position:relative;
- }
- 
- img{
-   position: absolute;
-   width:100%;
    height:100%;
+   width:20%;
+   position:relative;
+   background-image: url("logobr.png");
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
  }
+.h2{
+   text-align: center;
+}
+
  
  li {
     list-style: none;
@@ -148,6 +151,8 @@ label::after{
   
 
    ul{
+      margin-top:-5px;
      flex-direction: column;
    }
+   
 }
